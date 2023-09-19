@@ -6,10 +6,15 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXFileReference section */
+		A999AB0F2AB937BE000756A6 /* fortigate-bulk-add-script.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = "fortigate-bulk-add-script.py"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		A999AB042AB9364A000756A6 = {
 			isa = PBXGroup;
 			children = (
+				A999AB0F2AB937BE000756A6 /* fortigate-bulk-add-script.py */,
 			);
 			sourceTree = "<group>";
 		};
