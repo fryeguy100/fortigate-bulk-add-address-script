@@ -17,6 +17,9 @@ if os.path.exists(output_file):
 
 # Open files and process each line
 with open(input_file, 'r') as infile, open(output_file, 'a') as outfile:
+
+    outfile.write('config firewall address\n')  # This line added to the top of the output file
+    
     for line in infile:
         ip, cidr = line.strip().split('/')
         mask = cidr_to_mask(cidr)
@@ -24,5 +27,6 @@ with open(input_file, 'r') as infile, open(output_file, 'a') as outfile:
         outfile.write(f'edit "{ip}/{cidr}"\n')
         outfile.write(f'set subnet {ip} {mask}\n')
         outfile.write('next\n')
+        outfile.write('end\n')  # This line added to the end of the output file
     
 
