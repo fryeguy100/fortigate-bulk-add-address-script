@@ -33,7 +33,7 @@ Example:
 
 4) Run the script.
 
-python your_script_name.py
+python fortigate-bulk-add-address-script.py
 
 5) The output file will contain the CLI commands needed to add these address objects to a FortiGate firewall.
    
